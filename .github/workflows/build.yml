@@ -10,6 +10,11 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - name: Select Xcode 17
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '17'
+
       - name: Checkout (with submodules)
         uses: actions/checkout@v4
         with:
